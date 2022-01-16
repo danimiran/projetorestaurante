@@ -1,0 +1,260 @@
+.main-slider {
+    position: relative;
+    z-index: 1;
+}
+
+.main-slider:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, .4);
+}
+
+.pos-relative {
+    position: relative;
+    z-index: 1;
+}
+
+.h-100 {
+    height: 90% !important;
+}
+
+.dplay-tbl {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.dplay-tbl-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.mt-30 {
+    margin-top: 20px !important;
+}
+
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+
+
+.btn-primaryc {
+    position: relative;
+    text-align: center;
+    background: #426D49;
+    color: #fff;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.btn-primaryc:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #E6E6E6;
+    z-index: -2;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s .1s ease-in;
+}
+
+.btn-primaryc:before {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #FFFFFF;
+    z-index: -1;
+    -webkit-transition: all .1s .2s ease-in;
+    transition: all .1s ease-in;
+}
+
+.btn-primaryc:hover {
+    color: #426D49
+}
+
+.btn-primaryc:hover:after {
+    height: 100%;
+}
+
+.btn-primaryc:hover:before {
+    height: 100%;
+    border: 1px solid #E6E6E6;
+}
+
+.btn-letra {
+    font-size: 1rem;
+}
+
+
+#dropFileForm {
+
+    text-align: center;
+    border: 2px dashed #e0e0e0;
+    transition: 0.5s;
+    border-radius: 8px;
+
+
+}
+
+#dropFileForm #fileLabel {
+    background-color: rgba(0, #fff, 0, 0.5);
+    display: block;
+    padding: 16px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#dropFileForm #fileInput {
+    display: none;
+}
+
+#dropFileForm #fileLabel:after,
+#dropFileForm #fileLabel:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: -2;
+    border-radius: 8px 8px 0 0;
+}
+
+#dropFileForm #fileLabel:before {
+    z-index: -1;
+    background: repeating-linear-gradient(30deg,
+            transparent,
+            transparent 5%,
+            black 5%,
+            black 10%);
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+#dropFileForm.fileHover #fileLabel:before {
+    opacity: 0.25;
+}
+
+
+#dropFileForm.fileHover {
+    box-shadow: 0 0 11px #333;
+}
+
+.efeitoTriangulo {
+    content: '';
+    height: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background: url(../../mdb/img/triangulo.png) repeat-x;
+    background-size: 26px 10px;
+}
+
+.font-beyond {
+    font-family: 'beyond_the_mountainsregular', sans-serif;
+}
+
+.aaa,
+.aaa:hover {
+    background: #a3a1a1;
+    border-radius: 20px;
+    color: #000;
+
+}
+
+.map-container{
+        width: 650px;
+        height:400px;
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+}
+    
+.map-container iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+}
+    
+.texto-vermelho {
+        color: #426D49;
+}
+
+
+
+
+.texto-grande {
+    font-size: 6rem;
+}
+    
+@media (max-width: 1195px) {
+    .ifood img {
+     margin-left: 40px;
+     width: 90%;
+    }
+
+    .texto-grande {
+        font-size: 3.8rem;
+    }
+}
+
+@media (max-width: 1195px) {
+    .map-container{
+    margin: 0 auto;
+     width: 90%;
+            }
+}
+
+.tooltipo {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  .tooltipo .tooltiptexto {
+    visibility: hidden;
+    width: 70px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px 0;
+    position: absolute;
+  
+    bottom: 140%;
+    left: 50%;
+    margin-left: -45px;
+    font-size: 13px;
+  }
+  
+  .tooltipo .tooltiptexto::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -2px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltipo:hover .tooltiptexto {
+    visibility: visible;
+  }
+
